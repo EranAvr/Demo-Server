@@ -4,7 +4,7 @@ const PORT = 8080;
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Welcome to SkyTech demo server");
+    res.send("<h1>Welcome to SkyTech demo server</h1>");
 });
 app.get("/docs", (req, res) => {
     res.send("SkyTech Documentation");
