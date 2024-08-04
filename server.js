@@ -3,8 +3,19 @@ const express = require("express");
 const PORT = 8080;
 const app = express();
 
+/*  Handle Middlewares   */
+
+
+
+/*  Handle Routers   */
+const testRouter = require("./routers/test_router");
+app.use("/test", testRouter);
+
+
+
+/*  Main Server   */
 app.get("/", (req, res) => {
-    res.send("<h1>Welcome to SkyTech demo server</h1><h3>Version: 1.0.0</h3>");
+    res.send("<h1>Welcome to SkyTech demo server</h1>");
 });
 app.get("/docs", (req, res) => {
     res.send("SkyTech Documentation");
