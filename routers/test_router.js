@@ -3,7 +3,7 @@ const router = express.Router();
 
 // ----------------------------- GET ----------------------------------------
 router.get("/", (req, res) => {
-    res.send(<h1>Welcome to SkyTech Test Router</h1>);
+    res.send("<h1>Welcome to SkyTech Test Router</h1>");
 });
 
 
