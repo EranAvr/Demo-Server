@@ -9,7 +9,12 @@ const app = express();
 
 /*  Handle Routers   */
 const testRouter = require("./routers/test_router");
+const fullstackRouter = require("./routers/fullstack_router");
+const aiRouter = require("./routers/ai_router");
+
 app.use("/test", testRouter);
+app.use("/test", fullstackRouter);
+app.use("/test", aiRouter);
 
 
 
