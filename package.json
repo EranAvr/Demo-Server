@@ -1,6 +1,6 @@
 {
   "name": "test-server",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Demo project for testing Node JS server deployment",
   "main": "server.js",
   "scripts": {
