@@ -13,8 +13,8 @@ const fullstackRouter = require("./routers/fullstack_router");
 const aiRouter = require("./routers/ai_router");
 
 app.use("/test", testRouter);
-app.use("/test", fullstackRouter);
-app.use("/test", aiRouter);
+app.use("/fs", fullstackRouter);
+app.use("/ai", aiRouter);
 
 
 
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
     res.send("<h1>Welcome to SkyTech demo server</h1>");
 });
 app.get("/docs", (req, res) => {
-    res.send("SkyTech Documentation");
+    res.send("SkyTech Documentation\n/test\n/fs\n/ai\n");
 });
 
 app.listen(PORT, () => {
